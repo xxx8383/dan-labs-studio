@@ -66,6 +66,9 @@ main { max-width: 960px; }
 .knopf:hover { filter: brightness(1.05); }
 .hinweis { color: var(--leise); font-size: .95rem; margin-bottom: 4px; }
 
+.persoenlich { border-left: 6px solid var(--primaer); }
+.persoenlich p { font-size: 1.05rem; }
+
 /* Screenshots */
 .bilder { padding-right: 0; padding-left: 0; overflow: hidden; }
 .bilder h2 { padding: 0 24px; }

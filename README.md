@@ -15,3 +15,4 @@ https://xxx8383.github.io/dan-labs-studio/
 
 Nach dem Start im Play Store: Kasten `#tester` durch einen Link zum Store-Eintrag ersetzen
 und die Antwort „Was kostet die App?“ anpassen.
+Versprechen auf der Seite: **Tester behalten die App dauerhaft kostenlos.**

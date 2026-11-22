@@ -3,28 +3,175 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dan Labs Studio</title>
-<meta name="description" content="Apps von Dan Labs Studio – offline, ohne Werbung, ohne Tracking.">
+<title>1×1-Trainer – Einmaleins üben | Dan Labs Studio</title>
+<meta name="description" content="1×1-Trainer: Grundschulkinder üben das kleine Einmaleins mit Raketentank und Minispielen – offline, ohne Werbung, ohne Tracking. Für Android. Tester gesucht!">
+<meta property="og:title" content="1×1-Trainer – Einmaleins üben">
+<meta property="og:description" content="Einmaleins üben mit Raketentank und Minispielen – offline und ohne Werbung. Für Android.">
+<meta property="og:image" content="https://xxx8383.github.io/dan-labs-studio/bilder/app-symbol.png">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="start.css">
+<script>
+  // Sprache: gespeicherte Wahl, sonst Browsersprache. Ohne JavaScript bleibt alles auf Deutsch.
+  (function () {
+    var l = null;
+    try { l = localStorage.getItem('sprache'); } catch (e) {}
+    if (!l) l = (navigator.language || 'de').slice(0, 2) === 'de' ? 'de' : 'en';
+    if (l === 'en') { document.documentElement.classList.add('en-aktiv'); document.documentElement.lang = 'en'; }
+  })();
+</script>
 </head>
 <body>
-<header>
-  <p class="marke">Apps · offline · ohne Werbung</p>
-  <h1>Dan Labs Studio</h1>
+
+<header class="held">
+  <div class="leiste">
+    <span class="marke">Dan Labs Studio</span>
+    <nav class="umschalter" aria-label="Sprache / Language">
+      <button type="button" data-sprache="de">DE</button>
+      <button type="button" data-sprache="en">EN</button>
+    </nav>
+  </div>
+
+  <img class="symbol" src="bilder/app-symbol.png" width="112" height="112" alt="">
+  <h1>1×1-Trainer</h1>
+  <p class="unterzeile">
+    <span class="de">Einmaleins üben mit Raketentank und Minispielen</span>
+    <span class="en" lang="en">Practise the times tables with a rocket tank and mini games</span>
+  </p>
+  <ul class="plaketten">
+    <li><span class="de">Für Android</span><span class="en" lang="en">For Android</span></li>
+    <li><span class="de">Offline</span><span class="en" lang="en">Offline</span></li>
+    <li><span class="de">Ohne Werbung</span><span class="en" lang="en">No ads</span></li>
+    <li><span class="de">Ohne Tracking</span><span class="en" lang="en">No tracking</span></li>
+  </ul>
 </header>
+
 <main>
-  <section>
-    <a class="app" href="einmaleins/">
-      <h2>1×1-Trainer</h2>
-      <p>Das kleine Einmaleins üben – mit Raketentank, Minispielen und Entdecken-Ecke. Für Android.<br>
-      <em lang="en">Practise the times tables – with a rocket tank, mini games and a discovery corner. For Android.</em></p>
-      <p><strong>Datenschutz / Privacy →</strong></p>
-    </a>
+
+  <section class="tester" id="tester">
+    <p class="etikett"><span class="de">Geschlossener Test</span><span class="en" lang="en">Closed test</span></p>
+    <h2><span class="de">Tester gesucht!</span><span class="en" lang="en">Testers wanted!</span></h2>
+    <p class="de">Der 1×1-Trainer ist fast fertig für den Play Store. Vorher muss er bei Google 14 Tage lang von mindestens 12 Testern ausprobiert werden. Hilf mit – es dauert nur zwei Minuten und kostet nichts.</p>
+    <p class="en" lang="en">The 1×1 Trainer is almost ready for the Play Store. Before that, Google requires at least 12 testers to try it for 14 days. Help out – it takes two minutes and is free.</p>
+    <ol class="schritte">
+      <li>
+        <strong><span class="de">Der Testergruppe beitreten</span><span class="en" lang="en">Join the tester group</span></strong>
+        <span class="de">Mit dem Google-Konto, das auf deinem Android-Handy angemeldet ist.</span>
+        <span class="en" lang="en">Use the Google account that is signed in on your Android phone.</span>
+        <a class="knopf" href="https://groups.google.com/g/1x1-trainer-tester" rel="noopener"><span class="de">Zur Google-Gruppe</span><span class="en" lang="en">Open Google group</span></a>
+      </li>
+      <li>
+        <strong><span class="de">Test annehmen und installieren</span><span class="en" lang="en">Accept the test and install</span></strong>
+        <span class="de">„Tester werden“ tippen, danach die App im Play Store laden.</span>
+        <span class="en" lang="en">Tap “Become a tester”, then get the app from the Play Store.</span>
+        <a class="knopf" href="https://play.google.com/apps/testing/de.dabe.einmaleinstrainer" rel="noopener"><span class="de">Zum Test-Link</span><span class="en" lang="en">Open test link</span></a>
+      </li>
+      <li>
+        <strong><span class="de">14 Tage installiert lassen</span><span class="en" lang="en">Keep it installed for 14 days</span></strong>
+        <span class="de">Ab und zu üben hilft – und Rückmeldungen freuen mich sehr.</span>
+        <span class="en" lang="en">Using it now and then helps – and feedback is very welcome.</span>
+      </li>
+    </ol>
+    <p class="hinweis">
+      <span class="de">Zurzeit nur in Deutschland, Österreich und der Schweiz. Fragen oder Feedback: <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a></span>
+      <span class="en" lang="en">Currently available in Germany, Austria and Switzerland only. Questions or feedback: <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a></span>
+    </p>
   </section>
-  <section>
-    <h2>Kontakt / Contact</h2>
-    <p><a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a></p>
+
+  <section class="bilder" aria-label="Screenshots">
+    <h2><span class="de">So sieht die App aus</span><span class="en" lang="en">A look inside</span></h2>
+    <div class="streifen de">
+      <img src="bilder/de/01-start.webp" width="540" height="960" alt="Startbildschirm: Einmaleins üben mit Spaß">
+      <img src="bilder/de/02-ueben.webp" width="540" height="960" loading="lazy" alt="Üben: großer Ziffernblock für Kinderhände">
+      <img src="bilder/de/03-perfekt.webp" width="540" height="960" loading="lazy" alt="Ergebnis: Sterne, Konfetti und Raketentank">
+      <img src="bilder/de/04-malfolgen.webp" width="540" height="960" loading="lazy" alt="Malfolgen und Übungsziel wählen">
+      <img src="bilder/de/05-entdecken.webp" width="540" height="960" loading="lazy" alt="Entdecken: verstehen statt nur auswendig lernen">
+      <img src="bilder/de/06-fortschritt.webp" width="540" height="960" loading="lazy" alt="Fortschritt: alle 100 Aufgaben im Blick">
+      <img src="bilder/de/07-blitzrunde.webp" width="540" height="960" loading="lazy" alt="Blitzrunde: 60 Sekunden Tempo">
+      <img src="bilder/de/08-kalender.webp" width="540" height="960" loading="lazy" alt="Übungskalender für jeden Tag">
+    </div>
+    <div class="streifen en" lang="en">
+      <img src="bilder/en/01-start.webp" width="540" height="960" loading="lazy" alt="Home screen: practise the times tables">
+      <img src="bilder/en/02-ueben.webp" width="540" height="960" loading="lazy" alt="Practice: large number pad for small hands">
+      <img src="bilder/en/03-perfekt.webp" width="540" height="960" loading="lazy" alt="Result: stars, confetti and rocket tank">
+      <img src="bilder/en/04-malfolgen.webp" width="540" height="960" loading="lazy" alt="Choose times tables and a practice goal">
+      <img src="bilder/en/05-entdecken.webp" width="540" height="960" loading="lazy" alt="Discover: understand instead of memorising">
+      <img src="bilder/en/06-fortschritt.webp" width="540" height="960" loading="lazy" alt="Progress: all 100 facts at a glance">
+      <img src="bilder/en/07-blitzrunde.webp" width="540" height="960" loading="lazy" alt="Speed round: 60 seconds">
+      <img src="bilder/en/08-kalender.webp" width="540" height="960" loading="lazy" alt="Practice calendar for every day">
+    </div>
+    <p class="wischen"><span class="de">← wischen →</span><span class="en" lang="en">← swipe →</span></p>
   </section>
+
+  <section>
+    <h2><span class="de">Was die App kann</span><span class="en" lang="en">What it does</span></h2>
+    <div class="raster">
+      <div class="merkmal">
+        <h3><span class="de">Üben &amp; Wiederholen</span><span class="en" lang="en">Practise &amp; review</span></h3>
+        <p class="de">Malfolgen 1–10 frei wählen, Übungsziel nach Runden oder Minuten. Was noch nicht sitzt, kommt gezielt wieder.</p>
+        <p class="en" lang="en">Pick any tables from 1 to 10 and set a goal in rounds or minutes. Facts that aren’t solid yet come back on purpose.</p>
+      </div>
+      <div class="merkmal">
+        <h3><span class="de">Blitzrunde</span><span class="en" lang="en">Speed round</span></h3>
+        <p class="de">60 Sekunden, so viele Aufgaben wie möglich – und den eigenen Rekord knacken.</p>
+        <p class="en" lang="en">60 seconds, as many facts as possible – and beat your own record.</p>
+      </div>
+      <div class="merkmal">
+        <h3><span class="de">Entdecken</span><span class="en" lang="en">Discover</span></h3>
+        <p class="de">Sieben Lernelemente wie Würfelfeld, Raketensprünge und Zerlegen zeigen, wie das Einmaleins funktioniert.</p>
+        <p class="en" lang="en">Seven learning elements such as dot arrays, rocket jumps and splitting show how multiplication works.</p>
+      </div>
+      <div class="merkmal">
+        <h3><span class="de">Raketentank &amp; Minispiele</span><span class="en" lang="en">Rocket tank &amp; mini games</span></h3>
+        <p class="de">Richtige Antworten füllen den Tank. Ist er voll, gibt es Raketenflug, Alien-Ploppen oder Mondhüpfer.</p>
+        <p class="en" lang="en">Correct answers fill the tank. When it’s full, kids can play Rocket Flight, Alien Pop or Moon Hopper.</p>
+      </div>
+      <div class="merkmal">
+        <h3><span class="de">Fortschritt &amp; Kalender</span><span class="en" lang="en">Progress &amp; calendar</span></h3>
+        <p class="de">Alle 100 Aufgaben auf einen Blick und ein Übungskalender mit der Übungszeit pro Tag.</p>
+        <p class="en" lang="en">All 100 facts at a glance plus a calendar showing practice time per day.</p>
+      </div>
+      <div class="merkmal">
+        <h3><span class="de">Für Eltern</span><span class="en" lang="en">For parents</span></h3>
+        <p class="de">Mehrere Kinder, Elternbereich mit PIN, einstellbare Strenge, Deutsch und Englisch, Handy und Tablet.</p>
+        <p class="en" lang="en">Several children, PIN-protected parent area, adjustable settings, German and English, phone and tablet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="schutz">
+    <h2><span class="de">Datenschutz</span><span class="en" lang="en">Privacy</span></h2>
+    <p class="de">Die App braucht kein Internet und hat keinen Zugriff darauf. Keine Werbung, kein Tracking, kein Konto – alle Daten bleiben auf dem Gerät. Auch diese Website setzt keine Cookies und lädt nichts von Dritten.</p>
+    <p class="en" lang="en">The app needs no internet and has no access to it. No ads, no tracking, no account – all data stays on the device. This website sets no cookies and loads nothing from third parties either.</p>
+    <p><a href="einmaleins/"><span class="de">Datenschutzerklärung lesen →</span><span class="en" lang="en">Read the privacy policy →</span></a></p>
+  </section>
+
 </main>
+
+<footer>
+  <p>© 2026 Dan Labs Studio · <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a> · <a href="einmaleins/"><span class="de">Datenschutz</span><span class="en" lang="en">Privacy</span></a></p>
+</footer>
+
+<script>
+  (function () {
+    var html = document.documentElement;
+    function setze(l) {
+      html.classList.toggle('en-aktiv', l === 'en');
+      html.lang = l;
+      try { localStorage.setItem('sprache', l); } catch (e) {}
+      markiere();
+    }
+    function markiere() {
+      var aktiv = html.classList.contains('en-aktiv') ? 'en' : 'de';
+      document.querySelectorAll('[data-sprache]').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.dataset.sprache === aktiv ? 'true' : 'false');
+      });
+    }
+    document.querySelectorAll('[data-sprache]').forEach(function (b) {
+      b.addEventListener('click', function () { setze(b.dataset.sprache); });
+    });
+    markiere();
+  })();
+</script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+/* Startseite – ergänzt stil.css (die Datenschutzseite nutzt nur stil.css). */
+
+/* Sprachumschaltung */
+html:not(.en-aktiv) .en { display: none !important; }
+html.en-aktiv .de { display: none !important; }
+
+/* Kopfbereich */
+.held {
+  padding: 16px 16px 40px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.18) 0 2px, transparent 3px) 0 0 / 46px 46px,
+    linear-gradient(160deg, #5B6FE6, #3A47B0);
+}
+.leiste {
+  max-width: 960px; margin: 0 auto 20px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.leiste .marke { font-weight: 600; }
+.umschalter { display: flex; gap: 4px; background: rgba(255,255,255,.15); border-radius: 999px; padding: 3px; }
+.umschalter button {
+  border: 0; background: transparent; color: #fff; font: inherit; font-size: .85rem; font-weight: 700;
+  padding: 4px 12px; border-radius: 999px; cursor: pointer;
+}
+.umschalter button[aria-pressed="true"] { background: #fff; color: #3A47B0; }
+.symbol {
+  width: 112px; height: 112px; border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.held h1 { font-size: 2.6rem; margin: 14px 0 4px; }
+.unterzeile { font-size: 1.2rem; margin: 0 auto; max-width: 30em; opacity: .95; }
+.plaketten { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.plaketten li { background: rgba(255,255,255,.16); border-radius: 999px; padding: 4px 14px; font-size: .9rem; font-weight: 600; }
+
+main { max-width: 960px; }
+
+/* Tester gesucht */
+.tester {
+  margin-top: -24px; position: relative;
+  border: 3px solid var(--akzent);
+  box-shadow: 0 10px 30px rgba(30,40,110,.15);
+}
+.etikett {
+  display: inline-block; margin: 16px 0 0;
+  background: var(--akzent); color: #3a2600; font-weight: 700; font-size: .8rem;
+  letter-spacing: .06em; text-transform: uppercase; padding: 2px 10px; border-radius: 999px;
+}
+.tester h2 { font-size: 1.8rem; margin-top: 6px; }
+.schritte { list-style: none; counter-reset: s; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.schritte li {
+  counter-increment: s; position: relative;
+  background: color-mix(in srgb, var(--primaer) 8%, transparent);
+  border-radius: 14px; padding: 14px 14px 16px 56px;
+  display: flex; flex-direction: column; gap: 6px; align-items: flex-start;
+}
+.schritte li::before {
+  content: counter(s); position: absolute; left: 14px; top: 14px;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--primaer); color: var(--karte); font-weight: 700;
+  display: grid; place-items: center;
+}
+.knopf {
+  margin-top: auto; display: inline-block;
+  background: var(--akzent); color: #3a2600; font-weight: 700; text-decoration: none;
+  padding: 8px 16px; border-radius: 12px;
+}
+.knopf:hover { filter: brightness(1.05); }
+.hinweis { color: var(--leise); font-size: .95rem; margin-bottom: 4px; }
+
+/* Screenshots */
+.bilder { padding-right: 0; padding-left: 0; overflow: hidden; }
+.bilder h2 { padding: 0 24px; }
+.streifen {
+  display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 16px 24px 8px; scrollbar-width: thin;
+}
+.streifen img {
+  flex: 0 0 auto; width: 210px; height: auto; border-radius: 16px;
+  scroll-snap-align: center; box-shadow: 0 6px 18px rgba(30,40,110,.18);
+}
+.wischen { text-align: center; color: var(--leise); font-size: .85rem; margin: 4px 0 0; }
+
+/* Funktionen */
+.raster { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 12px; }
+.merkmal { background: color-mix(in srgb, var(--primaer) 7%, transparent); border-radius: 14px; padding: 4px 16px 8px; }
+.merkmal h3 { margin: 12px 0 2px; }
+.merkmal p { margin: 0 0 8px; color: var(--leise); }
+
+footer .klein { font-size: .8rem; }
+
+@media (max-width: 480px) {
+  .held h1 { font-size: 2.1rem; }
+  .streifen { padding: 12px 16px 8px; }
+  .streifen img { width: 62vw; }
+  .bilder h2 { padding: 0 16px; }
+  .schritte li { padding-left: 52px; }
+}

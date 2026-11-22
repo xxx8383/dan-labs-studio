@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://xxx8383.github.io/dan-labs-studio/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://xxx8383.github.io/dan-labs-studio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xxx8383.github.io/dan-labs-studio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xxx8383.github.io/dan-labs-studio/"/>
+  </url>
+  <url>
+    <loc>https://xxx8383.github.io/dan-labs-studio/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://xxx8383.github.io/dan-labs-studio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xxx8383.github.io/dan-labs-studio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xxx8383.github.io/dan-labs-studio/"/>
+  </url>
+  <url>
+    <loc>https://xxx8383.github.io/dan-labs-studio/einmaleins/</loc>
+  </url>
+</urlset>

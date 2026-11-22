@@ -1,9 +1,5 @@
 /* Startseite – ergänzt stil.css (die Datenschutzseite nutzt nur stil.css). */
 
-/* Sprachumschaltung */
-html:not(.en-aktiv) .en { display: none !important; }
-html.en-aktiv .de { display: none !important; }
-
 /* Kopfbereich */
 .held {
   padding: 16px 16px 40px;
@@ -17,11 +13,6 @@ html.en-aktiv .de { display: none !important; }
 }
 .leiste .marke { font-weight: 600; }
 .umschalter { display: flex; gap: 4px; background: rgba(255,255,255,.15); border-radius: 999px; padding: 3px; }
-.umschalter button {
-  border: 0; background: transparent; color: #fff; font: inherit; font-size: .85rem; font-weight: 700;
-  padding: 4px 12px; border-radius: 999px; cursor: pointer;
-}
-.umschalter button[aria-pressed="true"] { background: #fff; color: #3A47B0; }
 .symbol {
   width: 112px; height: 112px; border-radius: 26px;
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
@@ -97,3 +88,21 @@ footer .klein { font-size: .8rem; }
   .bilder h2 { padding: 0 16px; }
   .schritte li { padding-left: 52px; }
 }
+
+/* Fragen von Eltern */
+.fragen details { border-top: 1px solid color-mix(in srgb, var(--leise) 25%, transparent); }
+.fragen details:last-child { border-bottom: 1px solid color-mix(in srgb, var(--leise) 25%, transparent); }
+.fragen summary {
+  cursor: pointer; font-weight: 600; padding: 12px 28px 12px 0; list-style: none; position: relative;
+}
+.fragen summary::-webkit-details-marker { display: none; }
+.fragen summary::after {
+  content: "+"; position: absolute; right: 4px; top: 8px; font-size: 1.4rem; color: var(--primaer);
+}
+.fragen details[open] summary::after { content: "–"; }
+.fragen details p { margin: 0 0 14px; color: var(--leise); }
+.fragen h2 { margin-bottom: 12px; }
+
+/* Sprachwahl als Links */
+.umschalter a { color: #fff; text-decoration: none; font-size: .85rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+.umschalter a[aria-current="page"] { background: #fff; color: #3A47B0; }

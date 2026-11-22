@@ -3,185 +3,210 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1×1-Trainer – Einmaleins üben | Dan Labs Studio</title>
-<meta name="description" content="1×1-Trainer: Grundschulkinder üben das kleine Einmaleins mit Raketentank und Minispielen – offline, ohne Werbung, ohne Tracking. Für Android. Tester gesucht!">
-<meta property="og:title" content="1×1-Trainer – Einmaleins üben">
-<meta property="og:description" content="Einmaleins üben mit Raketentank und Minispielen – offline und ohne Werbung. Für Android.">
+<title>1×1-Trainer – Einmaleins üben mit Spaß | App für Android</title>
+<meta name="description" content="1×1-Trainer: Grundschulkinder üben das kleine Einmaleins. Die App merkt sich schwere Aufgaben und wiederholt sie, bis sie sitzen – mit Raketentank und Minispielen, offline und ohne Werbung. Für Android.">
+<link rel="canonical" href="https://xxx8383.github.io/dan-labs-studio/">
+<link rel="alternate" hreflang="de" href="https://xxx8383.github.io/dan-labs-studio/">
+<link rel="alternate" hreflang="en" href="https://xxx8383.github.io/dan-labs-studio/en/">
+<link rel="alternate" hreflang="x-default" href="https://xxx8383.github.io/dan-labs-studio/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xxx8383.github.io/dan-labs-studio/">
+<meta property="og:title" content="1×1-Trainer – Einmaleins üben mit Spaß">
+<meta property="og:description" content="Einmaleins üben mit Raketentank und Minispielen – schwere Aufgaben kommen wieder, bis sie sitzen. Offline, ohne Werbung. Für Android.">
 <meta property="og:image" content="https://xxx8383.github.io/dan-labs-studio/bilder/app-symbol.png">
+<meta property="og:locale" content="de_DE">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="stil.css">
 <link rel="stylesheet" href="start.css">
-<script>
-  // Sprache: gespeicherte Wahl, sonst Browsersprache. Ohne JavaScript bleibt alles auf Deutsch.
-  (function () {
-    var l = null;
-    try { l = localStorage.getItem('sprache'); } catch (e) {}
-    if (!l) l = (navigator.language || 'de').slice(0, 2) === 'de' ? 'de' : 'en';
-    if (l === 'en') { document.documentElement.classList.add('en-aktiv'); document.documentElement.lang = 'en'; }
-  })();
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "1×1-Trainer",
+  "alternateName": "1x1 Trainer",
+  "operatingSystem": "Android 7.0+",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": [
+    "de",
+    "en"
+  ],
+  "description": "Lern-App für das kleine Einmaleins: wiederholt schwere Aufgaben, bis sie sitzen, mit Lernelementen, Blitzrunde, Übungskalender und Minispielen. Offline, ohne Werbung, ohne Tracking.",
+  "image": "https://xxx8383.github.io/dan-labs-studio/bilder/app-symbol.png",
+  "url": "https://xxx8383.github.io/dan-labs-studio/",
+  "isAccessibleForFree": true,
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Dan Labs Studio",
+    "email": "cood.s@gmx.de"
+  }
+}
 </script>
 </head>
 <body>
-
 <header class="held">
-  <div class="leiste">
-    <span class="marke">Dan Labs Studio</span>
-    <nav class="umschalter" aria-label="Sprache / Language">
-      <button type="button" data-sprache="de">DE</button>
-      <button type="button" data-sprache="en">EN</button>
-    </nav>
-  </div>
+<div class="leiste">
+<span class="marke">Dan Labs Studio</span>
+<nav aria-label="Sprache" class="umschalter"><a aria-current="page" href="./" hreflang="de" lang="de">DE</a><a href="en/" hreflang="en" lang="en">EN</a></nav>
+</div>
+<img alt="" class="symbol" height="112" src="bilder/app-symbol.png" width="112"/>
+<h1>1×1-Trainer</h1>
+<p class="unterzeile">
+Einmaleins üben mit Raketentank und Minispielen
 
-  <img class="symbol" src="bilder/app-symbol.png" width="112" height="112" alt="">
-  <h1>1×1-Trainer</h1>
-  <p class="unterzeile">
-    <span class="de">Einmaleins üben mit Raketentank und Minispielen</span>
-    <span class="en" lang="en">Practise the times tables with a rocket tank and mini games</span>
-  </p>
-  <ul class="plaketten">
-    <li><span class="de">Für Android</span><span class="en" lang="en">For Android</span></li>
-    <li><span class="de">Offline</span><span class="en" lang="en">Offline</span></li>
-    <li><span class="de">Ohne Werbung</span><span class="en" lang="en">No ads</span></li>
-    <li><span class="de">Ohne Tracking</span><span class="en" lang="en">No tracking</span></li>
-  </ul>
+</p>
+<ul class="plaketten">
+<li>Für Android</li>
+<li>Offline</li>
+<li>Ohne Werbung</li>
+<li>Ohne Tracking</li>
+</ul>
 </header>
-
 <main>
+<section class="tester" id="tester">
+<p class="etikett">Geschlossener Test</p>
+<h2>Tester gesucht!</h2>
+<p>Der 1×1-Trainer ist fast fertig für den Play Store. Vorher muss er bei Google 14 Tage lang von mindestens 12 Testern ausprobiert werden. Hilf mit – es dauert nur zwei Minuten. Als Dankeschön bleibt die App für alle Tester dauerhaft kostenlos.</p>
 
-  <section class="tester" id="tester">
-    <p class="etikett"><span class="de">Geschlossener Test</span><span class="en" lang="en">Closed test</span></p>
-    <h2><span class="de">Tester gesucht!</span><span class="en" lang="en">Testers wanted!</span></h2>
-    <p class="de">Der 1×1-Trainer ist fast fertig für den Play Store. Vorher muss er bei Google 14 Tage lang von mindestens 12 Testern ausprobiert werden. Hilf mit – es dauert nur zwei Minuten und kostet nichts.</p>
-    <p class="en" lang="en">The 1×1 Trainer is almost ready for the Play Store. Before that, Google requires at least 12 testers to try it for 14 days. Help out – it takes two minutes and is free.</p>
-    <ol class="schritte">
-      <li>
-        <strong><span class="de">Der Testergruppe beitreten</span><span class="en" lang="en">Join the tester group</span></strong>
-        <span class="de">Bei Google anmelden – mit dem Konto, das auf deinem Android-Handy genutzt wird – und auf „Gruppe beitreten“ tippen.</span>
-        <span class="en" lang="en">Sign in to Google – with the account used on your Android phone – and tap “Join group”.</span>
-        <a class="knopf" href="https://groups.google.com/g/1x1-trainer-tester" rel="noopener"><span class="de">Zur Google-Gruppe</span><span class="en" lang="en">Open Google group</span></a>
-      </li>
-      <li>
-        <strong><span class="de">Test annehmen und installieren</span><span class="en" lang="en">Accept the test and install</span></strong>
-        <span class="de">„Tester werden“ tippen, danach die App im Play Store laden.</span>
-        <span class="en" lang="en">Tap “Become a tester”, then get the app from the Play Store.</span>
-        <a class="knopf" href="https://play.google.com/apps/testing/de.dabe.einmaleinstrainer" rel="noopener"><span class="de">Zum Test-Link</span><span class="en" lang="en">Open test link</span></a>
-      </li>
-      <li>
-        <strong><span class="de">14 Tage installiert lassen</span><span class="en" lang="en">Keep it installed for 14 days</span></strong>
-        <span class="de">Ab und zu üben hilft – und Rückmeldungen freuen mich sehr.</span>
-        <span class="en" lang="en">Using it now and then helps – and feedback is very welcome.</span>
-      </li>
-    </ol>
-    <p class="hinweis">
-      <span class="de">Zurzeit nur in Deutschland, Österreich und der Schweiz. Fragen oder Feedback: <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a></span>
-      <span class="en" lang="en">Currently available in Germany, Austria and Switzerland only. Questions or feedback: <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a></span>
-    </p>
-  </section>
+<ol class="schritte">
+<li>
+<strong>Der Testergruppe beitreten</strong>
+Bei Google anmelden – mit dem Konto, das auf deinem Android-Handy genutzt wird – und auf „Gruppe beitreten“ tippen.
 
-  <section class="persoenlich">
-    <h2><span class="de">Warum es diese App gibt</span><span class="en" lang="en">Why this app exists</span></h2>
-    <p class="de">Ich habe den 1×1-Trainer ursprünglich für meine eigenen Kinder entwickelt. Das Einmaleins ist wichtig und muss richtig sitzen – aber mir fehlte der Überblick: Welche Malfolgen können die Kinder schon? Wo haben sie noch Schwierigkeiten?</p>
-    <p class="en" lang="en">I originally built the 1×1 Trainer for my own children. The times tables matter and need to stick – but I was missing the overview: Which tables do the kids already know? Where are they still struggling?</p>
-    <p class="de">Daraus entstand die Idee: Die App merkt sich jede Aufgabe und legt genau die, die noch schwerfallen, immer wieder vor – so lange, bis sie sicher sitzen. Und das im besten Fall mit Spaß.</p>
-    <p class="en" lang="en">That led to the idea: the app keeps track of every fact and brings back exactly the ones that are still hard, again and again – until they’re solid. And ideally, it’s fun along the way.</p>
-    <p class="de">Mit der Zeit ist daraus eine richtige App geworden, die ich jetzt auch anderen Familien zur Verfügung stellen möchte. Ich entwickle sie in meiner Freizeit weiter und freue mich sehr über Rückmeldungen und Ideen.</p>
-    <p class="en" lang="en">Over time it grew into a real app that I’d now like to share with other families. I keep developing it in my spare time and feedback and ideas are very welcome.</p>
-  </section>
+<a class="knopf" href="https://groups.google.com/g/1x1-trainer-tester" rel="noopener">Zur Google-Gruppe</a>
+</li>
+<li>
+<strong>Test annehmen und installieren</strong>
+„Tester werden“ tippen, danach die App im Play Store laden.
 
-  <section class="bilder" aria-label="Screenshots">
-    <h2><span class="de">So sieht die App aus</span><span class="en" lang="en">A look inside</span></h2>
-    <div class="streifen de">
-      <img src="bilder/de/01-start.webp" width="540" height="960" alt="Startbildschirm: Einmaleins üben mit Spaß">
-      <img src="bilder/de/02-ueben.webp" width="540" height="960" loading="lazy" alt="Üben: großer Ziffernblock für Kinderhände">
-      <img src="bilder/de/03-perfekt.webp" width="540" height="960" loading="lazy" alt="Ergebnis: Sterne, Konfetti und Raketentank">
-      <img src="bilder/de/04-malfolgen.webp" width="540" height="960" loading="lazy" alt="Malfolgen und Übungsziel wählen">
-      <img src="bilder/de/05-entdecken.webp" width="540" height="960" loading="lazy" alt="Entdecken: verstehen statt nur auswendig lernen">
-      <img src="bilder/de/06-fortschritt.webp" width="540" height="960" loading="lazy" alt="Fortschritt: alle 100 Aufgaben im Blick">
-      <img src="bilder/de/07-blitzrunde.webp" width="540" height="960" loading="lazy" alt="Blitzrunde: 60 Sekunden Tempo">
-      <img src="bilder/de/08-kalender.webp" width="540" height="960" loading="lazy" alt="Übungskalender für jeden Tag">
-    </div>
-    <div class="streifen en" lang="en">
-      <img src="bilder/en/01-start.webp" width="540" height="960" loading="lazy" alt="Home screen: practise the times tables">
-      <img src="bilder/en/02-ueben.webp" width="540" height="960" loading="lazy" alt="Practice: large number pad for small hands">
-      <img src="bilder/en/03-perfekt.webp" width="540" height="960" loading="lazy" alt="Result: stars, confetti and rocket tank">
-      <img src="bilder/en/04-malfolgen.webp" width="540" height="960" loading="lazy" alt="Choose times tables and a practice goal">
-      <img src="bilder/en/05-entdecken.webp" width="540" height="960" loading="lazy" alt="Discover: understand instead of memorising">
-      <img src="bilder/en/06-fortschritt.webp" width="540" height="960" loading="lazy" alt="Progress: all 100 facts at a glance">
-      <img src="bilder/en/07-blitzrunde.webp" width="540" height="960" loading="lazy" alt="Speed round: 60 seconds">
-      <img src="bilder/en/08-kalender.webp" width="540" height="960" loading="lazy" alt="Practice calendar for every day">
-    </div>
-    <p class="wischen"><span class="de">← wischen →</span><span class="en" lang="en">← swipe →</span></p>
-  </section>
+<a class="knopf" href="https://play.google.com/apps/testing/de.dabe.einmaleinstrainer" rel="noopener">Zum Test-Link</a>
+</li>
+<li>
+<strong>14 Tage installiert lassen</strong>
+Ab und zu üben hilft – und Rückmeldungen freuen mich sehr.
 
-  <section>
-    <h2><span class="de">Was die App kann</span><span class="en" lang="en">What it does</span></h2>
-    <div class="raster">
-      <div class="merkmal">
-        <h3><span class="de">Üben &amp; Wiederholen</span><span class="en" lang="en">Practise &amp; review</span></h3>
-        <p class="de">Malfolgen 1–10 frei wählen, Übungsziel nach Runden oder Minuten. Was noch nicht sitzt, kommt gezielt wieder.</p>
-        <p class="en" lang="en">Pick any tables from 1 to 10 and set a goal in rounds or minutes. Facts that aren’t solid yet come back on purpose.</p>
-      </div>
-      <div class="merkmal">
-        <h3><span class="de">Blitzrunde</span><span class="en" lang="en">Speed round</span></h3>
-        <p class="de">60 Sekunden, so viele Aufgaben wie möglich – und den eigenen Rekord knacken.</p>
-        <p class="en" lang="en">60 seconds, as many facts as possible – and beat your own record.</p>
-      </div>
-      <div class="merkmal">
-        <h3><span class="de">Entdecken</span><span class="en" lang="en">Discover</span></h3>
-        <p class="de">Sieben Lernelemente wie Würfelfeld, Raketensprünge und Zerlegen zeigen, wie das Einmaleins funktioniert.</p>
-        <p class="en" lang="en">Seven learning elements such as dot arrays, rocket jumps and splitting show how multiplication works.</p>
-      </div>
-      <div class="merkmal">
-        <h3><span class="de">Raketentank &amp; Minispiele</span><span class="en" lang="en">Rocket tank &amp; mini games</span></h3>
-        <p class="de">Richtige Antworten füllen den Tank. Ist er voll, gibt es Raketenflug, Alien-Ploppen oder Mondhüpfer.</p>
-        <p class="en" lang="en">Correct answers fill the tank. When it’s full, kids can play Rocket Flight, Alien Pop or Moon Hopper.</p>
-      </div>
-      <div class="merkmal">
-        <h3><span class="de">Fortschritt &amp; Kalender</span><span class="en" lang="en">Progress &amp; calendar</span></h3>
-        <p class="de">Alle 100 Aufgaben auf einen Blick und ein Übungskalender mit der Übungszeit pro Tag.</p>
-        <p class="en" lang="en">All 100 facts at a glance plus a calendar showing practice time per day.</p>
-      </div>
-      <div class="merkmal">
-        <h3><span class="de">Für Eltern</span><span class="en" lang="en">For parents</span></h3>
-        <p class="de">Mehrere Kinder, Elternbereich mit PIN, einstellbare Strenge, Deutsch und Englisch, Handy und Tablet.</p>
-        <p class="en" lang="en">Several children, PIN-protected parent area, adjustable settings, German and English, phone and tablet.</p>
-      </div>
-    </div>
-  </section>
+</li>
+</ol>
+<p class="hinweis">
+Zurzeit nur in Deutschland, Österreich und der Schweiz. Fragen oder Feedback: <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a>
 
-  <section class="schutz">
-    <h2><span class="de">Datenschutz</span><span class="en" lang="en">Privacy</span></h2>
-    <p class="de">Die App braucht kein Internet und hat keinen Zugriff darauf. Keine Werbung, kein Tracking, kein Konto – alle Daten bleiben auf dem Gerät. Auch diese Website setzt keine Cookies und lädt nichts von Dritten.</p>
-    <p class="en" lang="en">The app needs no internet and has no access to it. No ads, no tracking, no account – all data stays on the device. This website sets no cookies and loads nothing from third parties either.</p>
-    <p><a href="einmaleins/"><span class="de">Datenschutzerklärung lesen →</span><span class="en" lang="en">Read the privacy policy →</span></a></p>
-  </section>
+</p>
+</section>
+<section class="persoenlich">
+<h2>Warum es diese App gibt</h2>
+<p>Ich habe den 1×1-Trainer ursprünglich für meine eigenen Kinder entwickelt. Das Einmaleins ist wichtig und muss richtig sitzen – aber mir fehlte der Überblick: Welche Malfolgen können die Kinder schon? Wo haben sie noch Schwierigkeiten?</p>
 
+<p>Daraus entstand die Idee: Die App merkt sich jede Aufgabe und legt genau die, die noch schwerfallen, immer wieder vor – so lange, bis sie sicher sitzen. Und das im besten Fall mit Spaß.</p>
+
+<p>Mit der Zeit ist daraus eine richtige App geworden, die ich jetzt auch anderen Familien zur Verfügung stellen möchte. Ich entwickle sie in meiner Freizeit weiter und freue mich sehr über Rückmeldungen und Ideen.</p>
+
+</section>
+<section aria-label="Screenshots" class="bilder">
+<h2>So sieht die App aus</h2>
+<div class="streifen">
+<img alt="Startbildschirm: Einmaleins üben mit Spaß" height="960" src="bilder/de/01-start.webp" width="540"/>
+<img alt="Üben: großer Ziffernblock für Kinderhände" height="960" loading="lazy" src="bilder/de/02-ueben.webp" width="540"/>
+<img alt="Ergebnis: Sterne, Konfetti und Raketentank" height="960" loading="lazy" src="bilder/de/03-perfekt.webp" width="540"/>
+<img alt="Malfolgen und Übungsziel wählen" height="960" loading="lazy" src="bilder/de/04-malfolgen.webp" width="540"/>
+<img alt="Entdecken: verstehen statt nur auswendig lernen" height="960" loading="lazy" src="bilder/de/05-entdecken.webp" width="540"/>
+<img alt="Fortschritt: alle 100 Aufgaben im Blick" height="960" loading="lazy" src="bilder/de/06-fortschritt.webp" width="540"/>
+<img alt="Blitzrunde: 60 Sekunden Tempo" height="960" loading="lazy" src="bilder/de/07-blitzrunde.webp" width="540"/>
+<img alt="Übungskalender für jeden Tag" height="960" loading="lazy" src="bilder/de/08-kalender.webp" width="540"/>
+</div>
+
+<p class="wischen">← wischen →</p>
+</section>
+<section>
+<h2>Was die App kann</h2>
+<div class="raster">
+<div class="merkmal">
+<h3>Üben &amp; Wiederholen</h3>
+<p>Malfolgen 1–10 frei wählen, Übungsziel nach Runden oder Minuten. Was noch nicht sitzt, kommt gezielt wieder.</p>
+
+</div>
+<div class="merkmal">
+<h3>Blitzrunde</h3>
+<p>60 Sekunden, so viele Aufgaben wie möglich – und den eigenen Rekord knacken.</p>
+
+</div>
+<div class="merkmal">
+<h3>Entdecken</h3>
+<p>Sieben Lernelemente wie Würfelfeld, Raketensprünge und Zerlegen zeigen, wie das Einmaleins funktioniert.</p>
+
+</div>
+<div class="merkmal">
+<h3>Raketentank &amp; Minispiele</h3>
+<p>Richtige Antworten füllen den Tank. Ist er voll, gibt es Raketenflug, Alien-Ploppen oder Mondhüpfer.</p>
+
+</div>
+<div class="merkmal">
+<h3>Fortschritt &amp; Kalender</h3>
+<p>Alle 100 Aufgaben auf einen Blick und ein Übungskalender mit der Übungszeit pro Tag.</p>
+
+</div>
+<div class="merkmal">
+<h3>Für Eltern</h3>
+<p>Mehrere Kinder, Elternbereich mit PIN, einstellbare Strenge, Deutsch und Englisch, Handy und Tablet.</p>
+
+</div>
+</div>
+</section>
+<section class="fragen" id="fragen">
+<h2>Fragen von Eltern</h2>
+<details>
+<summary>Für welches Alter ist die App gedacht?</summary>
+<p>Für Kinder, die das kleine Einmaleins lernen oder festigen – meist in der 2. bis 4. Klasse. Auch ältere Kinder, bei denen einzelne Malfolgen noch wackeln, profitieren davon.</p>
+
+</details>
+<details>
+<summary>Wie sorgt die App dafür, dass schwere Aufgaben sitzen?</summary>
+<p>Die App merkt sich für jede der 100 Aufgaben die letzten fünf Versuche. Aufgaben, die noch nicht sicher sind, landen in „Wiederholen“ und kommen so lange wieder, bis sie sitzen. Falsch beantwortete Aufgaben tauchen schon wenige Aufgaben später erneut auf. 3 × 7 und 7 × 3 werden getrennt gezählt. Wie streng die App dabei ist, stellen Eltern selbst ein.</p>
+
+</details>
+<details>
+<summary>Sehe ich als Elternteil, wo mein Kind steht?</summary>
+<p>Ja. „Mein Fortschritt“ zeigt alle 100 Aufgaben farbig: sicher, fast sicher oder noch üben. Dazu gibt es einen Übungskalender mit der Übungszeit pro Tag. Im Elternbereich finden Sie den Kalender für jedes Kind.</p>
+
+</details>
+<details>
+<summary>Was kostet die App?</summary>
+<p>Zurzeit ist die App kostenlos, ohne Werbung und ohne Käufe. Für alle, die jetzt beim Test mitmachen, bleibt sie dauerhaft kostenlos.</p>
+
+</details>
+<details>
+<summary>Gibt es die App auch fürs iPhone?</summary>
+<p>Nein, zurzeit nur für Android (ab Android 7), auf Handy und Tablet, im Hoch- und Querformat.</p>
+
+</details>
+<details>
+<summary>Können mehrere Kinder die App nutzen?</summary>
+<p>Ja. Jedes Kind hat ein eigenes Profil mit eigenem Fortschritt, auf Wunsch mit Foto. Ein Konto oder eine E-Mail-Adresse braucht es nicht.</p>
+
+</details>
+<details>
+<summary>Lenken die Minispiele nicht vom Üben ab?</summary>
+<p>Ein Minispiel gibt es erst, wenn der Raketentank durch richtige Antworten voll ist – etwa alle vier bis fünf Runden. Ein Spiel dauert weniger als eine Minute. Eltern können die Minispiele im Elternbereich ganz ausschalten.</p>
+
+</details>
+<details>
+<summary>Braucht die App Internet?</summary>
+<p>Nein. Die App hat gar keinen Zugriff auf das Internet. Alle Daten bleiben auf dem Gerät; es gibt kein Tracking und keine Werbung.</p>
+
+</details>
+</section>
+<section class="schutz">
+<h2>Datenschutz</h2>
+<p>Die App braucht kein Internet und hat keinen Zugriff darauf. Keine Werbung, kein Tracking, kein Konto – alle Daten bleiben auf dem Gerät. Auch diese Website setzt keine Cookies und lädt nichts von Dritten.</p>
+
+<p><a href="einmaleins/">Datenschutzerklärung lesen →</a></p>
+</section>
 </main>
-
 <footer>
-  <p>© 2026 Dan Labs Studio · <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a> · <a href="einmaleins/"><span class="de">Datenschutz</span><span class="en" lang="en">Privacy</span></a></p>
+<p>© 2026 Dan Labs Studio · <a href="mailto:cood.s@gmx.de">cood.s@gmx.de</a> · <a href="einmaleins/">Datenschutz</a></p>
 </footer>
 
-<script>
-  (function () {
-    var html = document.documentElement;
-    function setze(l) {
-      html.classList.toggle('en-aktiv', l === 'en');
-      html.lang = l;
-      try { localStorage.setItem('sprache', l); } catch (e) {}
-      markiere();
-    }
-    function markiere() {
-      var aktiv = html.classList.contains('en-aktiv') ? 'en' : 'de';
-      document.querySelectorAll('[data-sprache]').forEach(function (b) {
-        b.setAttribute('aria-pressed', b.dataset.sprache === aktiv ? 'true' : 'false');
-      });
-    }
-    document.querySelectorAll('[data-sprache]').forEach(function (b) {
-      b.addEventListener('click', function () { setze(b.dataset.sprache); });
-    });
-    markiere();
-  })();
-</script>
 </body>
 </html>

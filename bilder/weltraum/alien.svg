@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="74" viewBox="0 0 100 74">
+<defs><clipPath id="oben"><rect x="0" y="0" width="100" height="58"/></clipPath></defs>
+<!-- Kraterloch hinten -->
+<ellipse cx="50" cy="58" rx="40" ry="10" fill="#B4B9C2"/>
+<ellipse cx="50" cy="58" rx="33" ry="7.5" fill="#4A4E66"/>
+<g clip-path="url(#oben)">
+  <g>
+    <line x1="42" y1="18" x2="36" y2="6" stroke="#4FAE34" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="58" y1="18" x2="64" y2="6" stroke="#4FAE34" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="36" cy="6" r="3.2" fill="#7ED957"/><circle cx="64" cy="6" r="3.2" fill="#7ED957"/>
+    <path d="M26 58 V36 C26 22 37 14 50 14 C63 14 74 22 74 36 V58 Z" fill="#7ED957"/>
+    <path d="M26 58 V40 C30 48 40 52 50 52 C60 52 70 48 74 40 V58 Z" fill="#4FAE34" fill-opacity=".45"/>
+    <g><ellipse cx="41" cy="32" rx="5.5" ry="6.5" fill="#fff"/><circle cx="42" cy="33" r="3" fill="#1E2142"/></g>
+    <g><ellipse cx="59" cy="32" rx="5.5" ry="6.5" fill="#fff"/><circle cx="58" cy="33" r="3" fill="#1E2142"/></g>
+    <path d="M44 43 Q50 48 56 43" fill="none" stroke="#1E2142" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</g>
+<!-- vorderer Kraterrand über dem Alien -->
+<path d="M10 58 A40 10 0 0 0 90 58 A33 7.5 0 0 1 17 58 Z" fill="#B4B9C2"/>
+</svg>

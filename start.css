@@ -2,10 +2,30 @@
 
 /* Kopfbereich */
 .held {
-  padding: 16px 16px 40px;
+  /* Weltraum wie im Minispiel „Mondhüpfer“: Sternenhimmel und Mondboden als Hintergrund,
+     Erde, Rakete, Astronaut und Alien als Bilder in .weltraum (bilder/weltraum/) */
+  position: relative;
+  overflow: hidden;
+  padding: 16px 16px 112px;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255,255,255,.18) 0 2px, transparent 3px) 0 0 / 46px 46px,
-    linear-gradient(160deg, #5B6FE6, #3A47B0);
+    url(bilder/weltraum/mond.svg) center bottom / auto 96px repeat-x,
+    url(bilder/weltraum/sterne.svg) center top / 760px auto repeat,
+    linear-gradient(180deg, #14183D 0%, #232D7A 60%, #3446B8 100%);
+}
+.held > :not(.weltraum) { position: relative; } /* Inhalt liegt über den Bildern */
+.weltraum { position: absolute; inset: 0; max-width: 1040px; margin: 0 auto; pointer-events: none; }
+.weltraum img { position: absolute; display: block; }
+.erde { right: 16px; top: 64px; width: 104px; }
+/* Rakete auf dem Weg zur Erde, rechts neben dem Text */
+.rakete { right: 128px; top: 196px; width: 34px; transform: rotate(-8deg); }
+.astronaut { left: 6%; bottom: 22px; width: 84px; }
+.alien { right: 14%; bottom: 8px; width: 92px; }
+@media (max-width: 560px) {
+  .held { background-size: auto 80px, 760px auto, auto; padding-bottom: 104px; }
+  .erde { right: 12px; top: 58px; width: 64px; }
+  .rakete { right: 22px; top: 150px; width: 22px; }
+  .astronaut { left: 10px; bottom: 16px; width: 60px; }
+  .alien { right: 12px; bottom: 6px; width: 70px; }
 }
 .leiste {
   max-width: 960px; margin: 0 auto 20px;
